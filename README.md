@@ -55,7 +55,7 @@ Repositori ini memuat skrip pemrosesan geospasial (Python & GDAL), tabel acuan s
     │   ├── sample_kva_05m.tif
     │   ├── sample_penutupan_lahan_2025_05m.tif
     │   ├── sample_vektor_kba_kva.geojson
-    │   └── sample_vektor_kawasan_konservasi.geojson
+    │   └── sample_vektor_kriteria_khusus.geojson
     └── 02_output_jlh/                         # Sampel raster hasil 6 JLH, PHK_KK & JLH Tinggi (+ .qml)
         ├── sample_jlh_pga_05m.tif
         ├── sample_jlh_phk_05m.tif

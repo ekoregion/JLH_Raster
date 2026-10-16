@@ -12,7 +12,7 @@ Direktori ini berisi potongan data spasial (*clip*) berdasarkan poligon [`aoi_sa
 | `sample_kva_05m.tif` | Raster (`UInt8`, ZSTD) | Kode `Value` Karakteristik Vegetasi Alami (KVA) sesuai `config_skor/skor_kva.csv` |
 | `sample_penutupan_lahan_2025_05m.tif` | Raster (`UInt8`, ZSTD) | Kelas Penutupan Lahan Multiskala 2025 (1–15) sesuai `config_skor/skor_penutupan_lahan.csv` |
 | `sample_vektor_kba_kva.geojson` | Vektor (`GeoJSON`) | Poligon Unit Ekoregion (atribut KBA & KVA) hasil pemotongan dari `UE_Verlap_Sumbar.gdb` |
-| `sample_vektor_kawasan_konservasi.geojson` | Vektor (`GeoJSON`) | Poligon Kawasan Konservasi (Kriteria Khusus PHK) di dalam area sampel |
+| `sample_vektor_kriteria_khusus.geojson` | Vektor (`GeoJSON`) | Poligon Kriteria Khusus (PHK) di dalam area sampel |
 
 ---
 
