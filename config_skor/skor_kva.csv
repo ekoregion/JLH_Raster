@@ -1,0 +1,96 @@
+,Karakteristik Vegetasi Alami,Pengatur Air,Pendukung Habitat & Kehati,Penyerap & Penyimpan Karbon,Penyedia Air,Penyedia Pangan,Pengatur Kualitas Udara
+Value,KVA_250,Skor_PGA,Skor_PHK,Skor_PPK,Skor_PYA,Skor_PGN,Skor_PKU
+1,Vegetasi hutan batuan ultrabasa pamah,3,3,2,2,2,4
+2,Vegetasi hutan batuan ultrabasa pamah monsun,2,2,1,1,2,4
+3,Vegetasi hutan batuan ultrabasa pamah monsun malar hijau,3,3,2,2,2,4
+4,Vegetasi hutan batuan ultrabasa pamah monsun merangas,2,2,1,1,2,4
+5,Vegetasi hutan batuan ultrabasa pegunungan,2,1,1,2,2,4
+6,Vegetasi hutan batuan ultrabasa pegunungan alpin,2,1,1,1,1,4
+7,Vegetasi hutan batuan ultrabasa pegunungan atas,2,1,1,2,1,4
+8,Vegetasi hutan batuan ultrabasa pegunungan atas monsun,2,1,1,1,1,4
+9,Vegetasi hutan batuan ultrabasa pegunungan bawah,2,1,1,3,2,4
+10,Vegetasi hutan batuan ultrabasa pegunungan bawah monsun,2,1,1,2,2,4
+11,Vegetasi hutan batuan ultrabasa pegunungan subalpin,2,1,1,1,1,4
+12,Vegetasi hutan batugamping pamah,4,2,2,2,3,4
+13,Vegetasi hutan batugamping pamah monsun,3,3,1,2,2,4
+14,Vegetasi hutan batugamping pamah monsun malar hijau,3,3,2,3,3,4
+15,Vegetasi hutan batugamping pamah monsun merangas,3,2,1,2,2,4
+16,Vegetasi hutan batugamping pamah monsun merangas pada bentangalam karst,4,3,2,3,2,4
+17,Vegetasi hutan batugamping pamah monsun pada bentangalam karst,4,3,2,2,3,4
+18,Vegetasi hutan batugamping pamah pada bentangalam karst,4,3,4,3,3,4
+19,Vegetasi hutan batugamping pegunungan alpin,3,1,1,2,1,4
+20,Vegetasi hutan batugamping pegunungan atas,3,1,1,2,1,4
+21,Vegetasi hutan batugamping pegunungan atas monsun pada bentangalam karst,4,2,2,2,2,4
+22,Vegetasi hutan batugamping pegunungan atas pada bentangalam karst,4,1,2,3,1,4
+23,Vegetasi hutan batugamping pegunungan bawah,3,1,4,3,3,4
+24,Vegetasi hutan batugamping pegunungan bawah monsun,2,1,2,2,2,4
+25,Vegetasi hutan batugamping pegunungan bawah monsun pada bentangalam karst,4,2,2,3,2,4
+26,Vegetasi hutan batugamping pegunungan bawah pada bentangalam karst,4,2,2,3,3,4
+27,Vegetasi hutan batugamping pegunungan monsun pada bentangalam karst,4,2,2,2,2,4
+28,Vegetasi hutan batugamping pegunungan pada bentangalam karst,4,2,2,3,3,4
+29,Vegetasi hutan batugamping pegunungan subalpin,3,1,1,1,1,4
+30,Vegetasi hutan batugamping pegunungan subalpin monsun pada bentangalam karst,4,1,1,1,1,4
+31,Vegetasi hutan batugamping pegunungan subalpin pada bentangalam karst,4,1,1,2,1,4
+32,Vegetasi hutan danau,4,4,4,3,3,4
+33,Vegetasi hutan danau gambut,4,3,4,2,2,5
+34,Vegetasi hutan dipterokarpa pamah,5,5,5,4,5,5
+35,Vegetasi hutan gambut,4,3,4,2,3,5
+36,Vegetasi hutan kerangas,3,3,2,2,2,4
+37,Vegetasi hutan kerangas monsun,2,2,1,1,2,5
+38,Vegetasi hutan pamah (non dipterokarpa),5,5,5,4,5,4
+39,Vegetasi hutan pamah monsun malar hijau,4,4,2,3,3,5
+40,Vegetasi hutan pamah monsun merangas,4,3,1,2,2,4
+41,Vegetasi hutan pantai,4,4,2,3,3,4
+42,Vegetasi hutan pantai monsun,4,2,1,2,2,5
+43,Vegetasi hutan pegunungan atas,2,1,2,3,3,4
+44,Vegetasi hutan pegunungan atas monsun,3,1,1,2,2,5
+45,Vegetasi hutan pegunungan bawah,2,2,4,3,4,4
+46,Vegetasi hutan pegunungan bawah monsun,3,1,1,2,2,4
+47,Vegetasi hutan pegunungan monsun merangas pada bukit tinggi,2,1,1,2,2,5
+48,Vegetasi hutan pegunungan subalpin,2,1,1,1,1,5
+49,Vegetasi hutan pegunungan subalpin monsun,2,1,1,1,1,4
+50,Vegetasi hutan rawa air payau,2,2,2,2,3,5
+51,Vegetasi hutan rawa air payau monsun pada bentangalam karst,3,2,2,3,2,5
+52,Vegetasi hutan rawa air payau pada bentangalam karst,4,2,2,3,3,5
+53,Vegetasi hutan rawa air tawar,4,4,4,3,5,5
+54,Vegetasi hutan rawa air tawar monsun,4,3,2,2,4,5
+55,Vegetasi hutan rawa air tawar monsun pada bentangalam karst,4,2,2,3,2,5
+56,Vegetasi hutan rawa air tawar pada bentangalam karst,4,3,4,3,4,5
+57,Vegetasi hutan tepian sungai air payau,2,2,1,2,2,4
+58,Vegetasi hutan tepian sungai air tawar,4,2,2,3,3,5
+59,Vegetasi hutan tepian sungai air tawar monsun malar hijau,4,3,2,3,3,5
+60,Vegetasi litoral,1,1,1,1,4,5
+61,Vegetasi mangrove,4,3,5,3,5,5
+62,Vegetasi mangrove monsun,4,4,4,2,4,5
+63,Vegetasi nipah,4,3,4,2,4,4
+64,Vegetasi nipah monsun,4,3,2,2,3,4
+65,Vegetasi padang rumput lahan kering pamah,3,3,2,2,3,3
+66,Vegetasi padang rumput pamah monsun,2,2,1,1,2,4
+67,Vegetasi padang rumput rawa air payau,2,2,1,1,2,4
+68,Vegetasi padang rumput rawa air payau monsun,2,2,1,1,1,4
+69,Vegetasi padang rumput rawa air tawar,3,3,2,2,3,4
+70,Vegetasi padang rumput rawa air tawar monsun,3,3,2,2,4,4
+71,Vegetasi padang rumput rawa gambut,3,3,2,1,2,5
+72,Vegetasi padang rumput tepian sungai air payau,2,2,1,3,3,4
+73,Vegetasi sagu,3,3,4,3,5,4
+74,Vegetasi sagu monsun,4,4,2,3,5,4
+75,Vegetasi salju batugamping pegunungan alpin,2,1,1,2,1,5
+76,Vegetasi savana lahan kering pamah,2,2,2,2,2,3
+77,Vegetasi savana pamah monsun,3,3,2,2,2,4
+78,Vegetasi savana pegunungan monsun,2,1,1,2,2,4
+79,Vegetasi savana rawa air payau,2,2,1,2,2,4
+80,Vegetasi savana rawa air tawar,3,3,2,3,3,4
+81,Vegetasi savana rawa gambut,3,2,2,2,2,5
+82,Vegetasi savana tepian danau,4,3,4,3,3,4
+83,Vegetasi terna rawa air payau,2,2,1,2,3,4
+84,Vegetasi terna rawa air payau monsun,2,2,1,2,2,4
+85,Vegetasi terna rawa air payau monsun pada bentangalam karst,3,2,1,3,2,4
+86,Vegetasi terna rawa air payau pada bentangalam karst,3,2,2,3,3,4
+87,Vegetasi terna rawa air tawar,3,3,4,3,4,4
+88,Vegetasi terna rawa air tawar monsun,3,2,2,2,3,4
+89,Vegetasi terna rawa gambut,3,2,2,2,3,5
+90,Vegetasi terna savana rawa gambut,2,2,2,2,2,5
+91,Vegetasi terna tepian danau,3,2,2,3,3,4
+92,Vegetasi terna tepian danau pegunungan,4,2,2,3,3,4
+93,Vegetasi terna tepian sungai air payau,3,2,1,2,3,4
+94,Vegetasi terna tepian sungai air tawar,3,2,2,3,4,4

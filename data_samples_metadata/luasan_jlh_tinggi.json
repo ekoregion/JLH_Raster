@@ -1,0 +1,106 @@
+{
+  "threshold": 4.2,
+  "inputs": {
+    "pga": "sumbar_2025_jlh_pga_seamless.tif",
+    "phk": "sumbar_2025_jlh_phk_kk_seamless.tif",
+    "ppk": "sumbar_2025_jlh_ppk_seamless.tif"
+  },
+  "pixel_area_ha": 2.5e-05,
+  "total_daratan_ha": 4287713.83,
+  "classes": {
+    "10": {
+      "kode": "A",
+      "kategori": "Kategori A (3 JLH Tinggi)",
+      "penyusun": "PGA + PHK + PPK",
+      "label": "A - JLH Tinggi: Pengatur Air, Kehati & Karbon",
+      "pixels": 66130124753,
+      "luas_ha": 1653253.12,
+      "persen_daratan": 38.56
+    },
+    "21": {
+      "kode": "B1",
+      "kategori": "Kategori B (2 JLH Tinggi)",
+      "penyusun": "PGA + PHK",
+      "label": "B1 - JLH Tinggi: Pengatur Air & Kehati",
+      "pixels": 3933223228,
+      "luas_ha": 98330.58,
+      "persen_daratan": 2.29
+    },
+    "22": {
+      "kode": "B2",
+      "kategori": "Kategori B (2 JLH Tinggi)",
+      "penyusun": "PHK + PPK",
+      "label": "B2 - JLH Tinggi: Kehati & Karbon",
+      "pixels": 16931476389,
+      "luas_ha": 423286.91,
+      "persen_daratan": 9.87
+    },
+    "23": {
+      "kode": "B3",
+      "kategori": "Kategori B (2 JLH Tinggi)",
+      "penyusun": "PGA + PPK",
+      "label": "B3 - JLH Tinggi: Pengatur Air & Karbon",
+      "pixels": 10325456044,
+      "luas_ha": 258136.4,
+      "persen_daratan": 6.02
+    },
+    "31": {
+      "kode": "C1",
+      "kategori": "Kategori C (1 JLH Tinggi)",
+      "penyusun": "PGA",
+      "label": "C1 - JLH Tinggi: Pengatur Air",
+      "pixels": 2142245529,
+      "luas_ha": 53556.14,
+      "persen_daratan": 1.25
+    },
+    "32": {
+      "kode": "C2",
+      "kategori": "Kategori C (1 JLH Tinggi)",
+      "penyusun": "PHK",
+      "label": "C2 - JLH Tinggi: Pendukung Habitat & Kehati",
+      "pixels": 2428607342,
+      "luas_ha": 60715.18,
+      "persen_daratan": 1.42
+    },
+    "33": {
+      "kode": "C3",
+      "kategori": "Kategori C (1 JLH Tinggi)",
+      "penyusun": "PPK",
+      "label": "C3 - JLH Tinggi: Penyerap & Penyimpan Karbon",
+      "pixels": 3742393193,
+      "luas_ha": 93559.83,
+      "persen_daratan": 2.18
+    },
+    "1": {
+      "kode": "Non-JLHT",
+      "kategori": "Di Luar JLH Tinggi (< 4.2)",
+      "penyusun": "Tidak Ada (< 4.2)",
+      "label": "Non-JLH Tinggi (Ketiga JLH < 4.2)",
+      "pixels": 65875026850,
+      "luas_ha": 1646875.67,
+      "persen_daratan": 38.41
+    }
+  },
+  "categories": {
+    "Kategori A": {
+      "luas_ha": 1653253.12,
+      "persen_daratan": 38.56
+    },
+    "Kategori B": {
+      "luas_ha": 779753.89,
+      "persen_daratan": 18.19
+    },
+    "Kategori C": {
+      "luas_ha": 207831.15,
+      "persen_daratan": 4.85
+    },
+    "Total JLH Tinggi (A+B+C)": {
+      "luas_ha": 2640838.16,
+      "persen_daratan": 61.59
+    },
+    "Non-JLH Tinggi": {
+      "luas_ha": 1646875.67,
+      "persen_daratan": 38.41
+    }
+  }
+}

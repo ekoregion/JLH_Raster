@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dokumentasi Metodologi & Skrip JLH Sumatera Barat</title>
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        color: #24292e;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 40px 25px;
+        background-color: #ffffff;
+    }
+    h1, h2, h3, h4 { color: #1b4931; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; margin-top: 1.5em; }
+    h1 { border-bottom: 3px solid #2e7d32; color: #1b5e20; font-size: 28px; }
+    h2 { color: #2e7d32; font-size: 22px; }
+    table { border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 14px; }
+    th, td { border: 1px solid #dfe2e5; padding: 10px 14px; text-align: left; }
+    th { background-color: #f1f8e9; color: #2e7d32; font-weight: bold; }
+    tr:nth-child(even) { background-color: #f9fbf9; }
+    code { background-color: #f6f8fa; padding: 0.2em 0.4em; border-radius: 3px; font-family: monospace; font-size: 88%; color: #c7254e; }
+    pre { background-color: #282c34; color: #abb2bf; padding: 16px; border-radius: 6px; overflow-x: auto; font-size: 13px; line-height: 1.5; }
+    pre code { background-color: transparent; color: inherit; padding: 0; }
+    blockquote { border-left: 4px solid #2e7d32; margin: 15px 0; padding: 10px 16px; background: #f1f8e9; color: #333; }
+    .badge { display: inline-block; padding: 5px 10px; border-radius: 4px; background: #2e7d32; color: #fff; font-size: 12px; font-weight: bold; margin-bottom: 15px; letter-spacing: 0.5px; }
+</style>
+</head>
+<body>
+    <div class="badge">KEMENTERIAN LINGKUNGAN HIDUP / BPLH RI</div>
+    <h1>DOKUMENTASI LENGKAP METODOLOGI &amp; SKRIP PEMODELAN JASA LINGKUNGAN HIDUP (JLH)</h1>
+<h2>Provinsi Sumatera Barat (Tahun Analisis: 2025–2026)</h2>
+<p><strong>Instansi Penyusun:</strong> Direktorat Penyelenggaraan Sumber Daya Alam Berkelanjutan<br />
+<strong>Kementerian Lingkungan Hidup / Badan Pengendalian Lingkungan Hidup (BPLH)</strong><br />
+<strong>Resolusi Spasial:</strong> Ultra-Tinggi (0.5 Meter Seamless)<br />
+<strong>Sistem Proyeksi (CRS):</strong> EPSG:3857 (WGS 84 / Pseudo-Mercator)</p>
+<hr />
+<h2>DAFTAR ISI</h2>
+<ol>
+<li><a href="#1-latar-belakang--kerangka-konseptual-jlh">Latar Belakang &amp; Kerangka Konseptual JLH</a></li>
+<li><a href="#2-tiga-pilar-komponen-input-jlh">Tiga Pilar Komponen Input JLH</a><ul>
+<li><a href="#21-karakteristik-bentang-alam-kba">2.1 Karakteristik Bentang Alam (KBA)</a></li>
+<li><a href="#22-karakteristik-vegetasi-alami-kva">2.2 Karakteristik Vegetasi Alami (KVA)</a></li>
+<li><a href="#23-penutupan-lahan-multiskala-2025-pl">2.3 Penutupan Lahan Multiskala 2025 (PL)</a></li>
+</ul>
+</li>
+<li><a href="#3-formulasi-matematis--bobot-6-indikator-jlh">Formulasi Matematis &amp; Bobot 6 Indikator JLH</a></li>
+<li><a href="#4-tabel-matriks-skor-penutupan-lahan-pl-lookup-table">Tabel Matriks Skor Penutupan Lahan (PL Lookup Table)</a></li>
+<li><a href="#5-skrip-python-transformasi--kalkulasi-jlh-grid-05m">Skrip Python: Transformasi &amp; Kalkulasi JLH Grid 0.5m</a></li>
+<li><a href="#6-skrip-python-mozaik-seamless-se-sumbar--kompresi-lerc_zstd">Skrip Python: Mozaik Seamless Se-Sumbar &amp; Kompresi LERC_ZSTD</a></li>
+<li><a href="#7-penyesuaian-kriteria-khusus-kkgpkg-pada-layer-phk">Penyesuaian Kriteria Khusus (KK.gpkg) pada Layer PHK</a></li>
+<li><a href="#8-hilirisasi-analisis-jlh-ruang-hidup-kesesuaian-relokasi-huntaphuntara">Hilirisasi Analisis: JLH Ruang Hidup (Kesesuaian Relokasi Huntap/Huntara)</a></li>
+</ol>
+<hr />
+<h2>1. Latar Belakang &amp; Kerangka Konseptual JLH</h2>
+<p>Jasa Lingkungan Hidup (JLH) atau <em>Ecosystem Services</em> merupakan manfaat yang diperoleh manusia dari berfungsinya ekosistem alami dan bentang alam secara lestari. Pemodelan JLH di Provinsi Sumatera Barat disusun untuk menyediakan basis data spasial beresolusi sangat detail (0.5 meter) sebagai instrumen:</p>
+<ol>
+<li><strong>Rencana Perlindungan dan Pengelolaan Lingkungan Hidup (RPPLH)</strong>.</li>
+<li><strong>Penentuan Daya Dukung dan Daya Tampung Lingkungan Hidup (D3TLH)</strong>.</li>
+<li><strong>Mitigasi Bencana &amp; Pemilihan Lokasi Relokasi Masyarakat (Huntap/Huntara)</strong>.</li>
+</ol>
+<p>Pemodelan ini mengevaluasi <strong>6 Indikator Layanan Ekosistem</strong>:</p>
+<ol>
+<li><strong>PGA</strong> (<em>Pengaturan Air</em>): Kemampuan lanskap mengatur siklus hidrologi, retensi air, infiltrasi, dan pencegahan banjir/kekeringan.</li>
+<li><strong>PHK</strong> (<em>Pendukung Habitat &amp; Keanekaragaman Hayati</em>): Kemampuan lanskap mempertahankan keanekaragaman flora/fauna dan koridor ekologis.</li>
+<li><strong>PPK</strong> (<em>Penyerap &amp; Penyimpan Karbon</em>): Potensi biomassa vegetasi dan tanah dalam menyerap emisi CO2 atmosfer.</li>
+<li><strong>PYA</strong> (<em>Penyedia Air</em>): Ketersediaan air bersih dari sumber alami (air permukaan &amp; tanah) untuk kebutuhan domestik manusia.</li>
+<li><strong>PGN</strong> (<em>Penyedia Pangan</em>): Potensi lanskap menyediakan hasil pertanian, perkebunan, dan sumber pangan hewani lokal.</li>
+<li><strong>PKU</strong> (<em>Pengatur Kualitas Udara</em>): Kapasitas vegetasi dalam menyerap polutan udara, memproduksi oksigen, dan menjaga kenyamanan iklim mikro.</li>
+</ol>
+<hr />
+<h2>2. Tiga Pilar Komponen Input JLH</h2>
+<p>Setiap piksel indikator JLH dihitung dari perpaduan linear antara 3 komponen spasial:</p>
+<p>$$\mathbf{JLH} = (\text{Skor KBA} \times W_{\text{KBA}}) + (\text{Skor KVA} \times W_{\text{KVA}}) + (\text{Skor PL} \times W_{\text{PL}})$$</p>
+<h3>2.1 Karakteristik Bentang Alam (KBA)</h3>
+<ul>
+<li><strong>Definisi:</strong> Representasi faktor fisik abiotik permanen yang meliputi bentuk lahan (<em>landform</em>), elevasi topografi, geomorfologi, kelerengan, dan sifat batuan induk.</li>
+<li><strong>Tipe Data:</strong> Raster Float32 / UInt8 (Skala 1 s.d. 5).</li>
+<li><strong>Format:</strong> Cloud Optimized GeoTIFF (COG), resolusi 0.5 meter.</li>
+<li><strong>Peran:</strong> Menjadi pembobot stabilitas fisik tanah. Misalnya, pada PGA, bentang alam pegunungan dengan batuan permeabel memiliki skor KBA tinggi untuk infiltrasi.</li>
+</ul>
+<h3>2.2 Karakteristik Vegetasi Alami (KVA)</h3>
+<ul>
+<li><strong>Definisi:</strong> Representasi tutupan vegetasi klimaks alami (ekosistem hutan primer, hutan rawa gambut, vegetasi riparian) yang belum terganggu antropogenik berat.</li>
+<li><strong>Tipe Data:</strong> Raster Float32 / UInt8 (Skala 1 s.d. 5).</li>
+<li><strong>Format:</strong> Cloud Optimized GeoTIFF (COG), resolusi 0.5 meter.</li>
+<li><strong>Peran:</strong> Menilai integritas ekologis dan peran tutupan hutan alami dalam menjaga stabilitas iklim, kehati, dan retensi air tanah.</li>
+</ul>
+<h3>2.3 Penutupan Lahan Multiskala 2025 (PL)</h3>
+<ul>
+<li><strong>Definisi:</strong> Peta tutupan lahan aktual berbasis klasifikasi citra satelit resolusi tinggi tahun 2025 yang terbagi dalam ~2.300+ grid tile.</li>
+<li><strong>Tipe Data:</strong> Raster Categorical / UInt8 (Nilai kelas 1 s.d. 15).</li>
+<li><strong>Peran:</strong> Komponen paling dinamis dengan bobot dominan (60%) yang mencerminkan pemanfaatan permukaan bumi saat ini (hutan, sawah, kebun, badan air, hingga permukiman/jalan).</li>
+</ul>
+<hr />
+<h2>3. Formulasi Matematis &amp; Bobot 6 Indikator JLH</h2>
+<p>Penetapan bobot ($W$) pada masing-masing indikator mengacu pada karakteristik biogeofisik Regional Sumatera:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Indikator JLH</th>
+  <th style="text-align:center">Bobot KBA ($W_{\text{KBA}}$)</th>
+  <th style="text-align:center">Bobot KVA ($W_{\text{KVA}}$)</th>
+  <th style="text-align:center">Bobot PL ($W_{\text{PL}}$)</th>
+  <th style="text-align:center">Total Bobot</th>
+  <th style="text-align:left">Rasionalisasi Ilmiah</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>PGA</strong> (Pengaturan Air)</td>
+  <td style="text-align:center"><strong>0.28</strong></td>
+  <td style="text-align:center"><strong>0.12</strong></td>
+  <td style="text-align:center"><strong>0.60</strong></td>
+  <td style="text-align:center">1.00</td>
+  <td style="text-align:left">Bentang alam (kemiringan lereng &amp; jenis batuan KBA) sangat menentukan laju infiltrasi air.</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>PHK</strong> (Habitat &amp; Kehati)</td>
+  <td style="text-align:center"><strong>0.24</strong></td>
+  <td style="text-align:center"><strong>0.16</strong></td>
+  <td style="text-align:center"><strong>0.60</strong></td>
+  <td style="text-align:center">1.00</td>
+  <td style="text-align:left">Tipe ekosistem alami (KVA) dan bentuk bentang alam (KBA) menyediakan relung ekologis spesifik.</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>PPK</strong> (Penyerap Karbon)</td>
+  <td style="text-align:center"><strong>0.20</strong></td>
+  <td style="text-align:center"><strong>0.20</strong></td>
+  <td style="text-align:center"><strong>0.60</strong></td>
+  <td style="text-align:center">1.00</td>
+  <td style="text-align:left">Vegetasi alami (KVA) dan biomassa tutupan lahan aktual (PL) memiliki kontribusi seimbang terhadap stok karbon.</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>PYA</strong> (Penyedia Air)</td>
+  <td style="text-align:center"><strong>0.32</strong></td>
+  <td style="text-align:center"><strong>0.08</strong></td>
+  <td style="text-align:center"><strong>0.60</strong></td>
+  <td style="text-align:center">1.00</td>
+  <td style="text-align:left">Cekungan air tanah dan geomorfologi KBA paling dominan dalam menampung debit air permukaan dan mata air.</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>PGN</strong> (Penyedia Pangan)</td>
+  <td style="text-align:center"><strong>0.28</strong></td>
+  <td style="text-align:center"><strong>0.12</strong></td>
+  <td style="text-align:center"><strong>0.60</strong></td>
+  <td style="text-align:center">1.00</td>
+  <td style="text-align:left">Kesuburan tanah vulkanik dan dataran aluvium (KBA) menentukan produktivitas pangan.</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>PKU</strong> (Kualitas Udara)</td>
+  <td style="text-align:center"><strong>0.15</strong></td>
+  <td style="text-align:center"><strong>0.25</strong></td>
+  <td style="text-align:center"><strong>0.60</strong></td>
+  <td style="text-align:center">1.00</td>
+  <td style="text-align:left">Kerapatan tajuk vegetasi alami (KVA) sangat krusial dalam menyaring partikulat udara dan menyerap panas.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>4. Tabel Matriks Skor Penutupan Lahan (PL Lookup Table)</h2>
+<p>Nilai kelas penutupan lahan (1 - 15) dikonversikan ke skor layanan ekosistem skala 1 (Sangat Rendah) hingga 5 (Sangat Tinggi):</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Kode</th>
+  <th style="text-align:left">Kategori Penutupan Lahan</th>
+  <th style="text-align:center">PL PGA</th>
+  <th style="text-align:center">PL PHK</th>
+  <th style="text-align:center">PL PPK</th>
+  <th style="text-align:center">PL PYA</th>
+  <th style="text-align:center">PL PGN</th>
+  <th style="text-align:center">PL PKU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:left">Water (Badan Air)</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">5</td>
+</tr>
+<tr>
+  <td style="text-align:center"><strong>2</strong></td>
+  <td style="text-align:left">Natural Forest (Hutan Alami)</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">5</td>
+</tr>
+<tr>
+  <td style="text-align:center"><strong>4</strong></td>
+  <td style="text-align:left">Flooded Vegetation (Rawa/Mangrove)</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">5</td>
+</tr>
+<tr>
+  <td style="text-align:center"><strong>5</strong></td>
+  <td style="text-align:left">Crops (Pertanian/Sawah)</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">3</td>
+</tr>
+<tr>
+  <td style="text-align:center"><strong>7</strong></td>
+  <td style="text-align:left">Development Space (Lahan Terbuka Binaan)</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
+</tr>
+<tr>
+  <td style="text-align:center"><strong>8</strong></td>
+  <td style="text-align:left">Bare Ground (Tanah Terbuka)</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:center"><strong>11</strong></td>
+  <td style="text-align:left">Rangeland (Padang Rumput/Semak)</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">3</td>
+</tr>
+<tr>
+  <td style="text-align:center"><strong>12</strong></td>
+  <td style="text-align:left">Plantation (Perkebunan)</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">4</td>
+</tr>
+<tr>
+  <td style="text-align:center"><strong>13</strong></td>
+  <td style="text-align:left">Uncertain Trees (Pohon Campuran)</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">3</td>
+</tr>
+<tr>
+  <td style="text-align:center"><strong>14</strong></td>
+  <td style="text-align:left">Road (Jaringan Jalan)</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:center"><strong>15</strong></td>
+  <td style="text-align:left">Building (Bangunan/Gedung)</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Skrip Python: Transformasi &amp; Kalkulasi JLH Grid 0.5m</h2>
+<p>Pemrosesan dilakukan per-grid tile penutupan lahan (~2.300+ tile) menggunakan teknik <em>windowed reading</em> pada raster KBA dan KVA untuk mencegah lonjakan memori (anti-OOM/crash):</p>
+<pre><code class="language-python">import os
+import glob
+import numpy as np
+import rasterio
+from rasterio.windows import from_bounds
+from tqdm import tqdm
+
+# 1. Konfigurasi Parameter Bobot
+JLH_CONFIG = {
+    'pga': {'name': 'Pengaturan Air',             'w_kba': 0.28, 'w_kva': 0.12, 'w_pl': 0.60},
+    'phk': {'name': 'Pendukung Habitat &amp; Kehati', 'w_kba': 0.24, 'w_kva': 0.16, 'w_pl': 0.60},
+    'ppk': {'name': 'Penyerap &amp; Simpan Karbon',   'w_kba': 0.20, 'w_kva': 0.20, 'w_pl': 0.60},
+    'pya': {'name': 'Penyedia Air',               'w_kba': 0.32, 'w_kva': 0.08, 'w_pl': 0.60},
+    'pgn': {'name': 'Penyedia Pangan (Sumatera)', 'w_kba': 0.28, 'w_kva': 0.12, 'w_pl': 0.60},
+    'pku': {'name': 'Pengatur Kualitas Udara',    'w_kba': 0.15, 'w_kva': 0.25, 'w_pl': 0.60}
+}
+
+# 2. Lookup Skor PL ke Array 1D NumPy (Index 0 - 255)
+PL_LOOKUP = {
+    1:  {'pga': 5, 'phk': 1, 'ppk': 1, 'pya': 5, 'pgn': 4, 'pku': 5},
+    2:  {'pga': 5, 'phk': 5, 'ppk': 5, 'pya': 3, 'pgn': 4, 'pku': 5},
+    4:  {'pga': 4, 'phk': 3, 'ppk': 3, 'pya': 3, 'pgn': 4, 'pku': 5},
+    5:  {'pga': 3, 'phk': 1, 'ppk': 1, 'pya': 3, 'pgn': 4, 'pku': 3},
+    7:  {'pga': 2, 'phk': 1, 'ppk': 1, 'pya': 2, 'pgn': 1, 'pku': 2},
+    8:  {'pga': 1, 'phk': 1, 'ppk': 1, 'pya': 1, 'pgn': 1, 'pku': 1},
+    11: {'pga': 3, 'phk': 2, 'ppk': 2, 'pya': 1, 'pgn': 2, 'pku': 3},
+    12: {'pga': 3, 'phk': 2, 'ppk': 2, 'pya': 2, 'pgn': 3, 'pku': 4},
+    13: {'pga': 3, 'phk': 3, 'ppk': 2, 'pya': 2, 'pgn': 3, 'pku': 3},
+    14: {'pga': 1, 'phk': 1, 'ppk': 1, 'pya': 1, 'pgn': 1, 'pku': 1},
+    15: {'pga': 1, 'phk': 1, 'ppk': 1, 'pya': 2, 'pgn': 1, 'pku': 1}
+}
+
+PL_REMAP = {}
+for key in JLH_CONFIG.keys():
+    arr = np.zeros(256, dtype=np.float32)
+    for c_val, scores in PL_LOOKUP.items():
+        arr[c_val] = scores[key]
+    PL_REMAP[key] = arr
+
+# 3. Fungsi Komputasi Per Tile Grid
+def process_single_grid(pl_tile_path, kba_datasets, kva_datasets, output_path):
+    with rasterio.open(pl_tile_path) as src_pl:
+        pl_data = src_pl.read(1)
+        bounds = src_pl.bounds
+        shape = pl_data.shape
+        meta = src_pl.meta.copy()
+
+        # Deteksi piksel valid (bukan nodata)
+        valid_mask = pl_data &gt; 0
+        if not np.any(valid_mask):
+            return False
+
+        meta.update({
+            'count': 6,
+            'dtype': 'float32',
+            'nodata': 0.0,
+            'compress': 'deflate',
+            'predictor': 3
+        })
+
+        jlh_stack = np.zeros((6, shape[0], shape[1]), dtype=np.float32)
+
+        for band_idx, (key, cfg) in enumerate(JLH_CONFIG.items()):
+            # A. Skor PL via Array Indexing Instan
+            score_pl = PL_REMAP[key][pl_data]
+
+            # B. Windowed Reading KBA &amp; KVA sesuai bounds tile
+            win_kba = from_bounds(*bounds, transform=kba_datasets[key].transform)
+            score_kba = kba_datasets[key].read(1, window=win_kba, out_shape=shape).astype(np.float32)
+
+            win_kva = from_bounds(*bounds, transform=kva_datasets[key].transform)
+            score_kva = kva_datasets[key].read(1, window=win_kva, out_shape=shape).astype(np.float32)
+
+            # C. Perhitungan Kombinasi Linier
+            jlh_val = (score_kba * cfg['w_kba']) + (score_kva * cfg['w_kva']) + (score_pl * cfg['w_pl'])
+            jlh_val = np.where(valid_mask, jlh_val, 0.0)
+            jlh_stack[band_idx] = jlh_val
+
+        with rasterio.open(output_path, 'w', **meta) as dst:
+            dst.write(jlh_stack)
+            for idx, key in enumerate(JLH_CONFIG.keys(), start=1):
+                dst.set_band_description(idx, f&quot;JLH_{key.upper()}&quot;)
+        return True
+</code></pre>
+<hr />
+<h2>6. Skrip Python: Mozaik Seamless Se-Sumbar &amp; Kompresi LERC_ZSTD</h2>
+<p>Setelah ribuan tile grid selesai dihitung, seluruh tile digabungkan menjadi 1 file tunggal utuh per indikator (<em>seamless 1-file per layer</em>) menggunakan format kompresi modern <strong>LERC_ZSTD</strong>:</p>
+<pre><code class="language-python">import rasterio
+from rasterio.windows import Window
+import numpy as np
+
+def export_seamless_lerc_zstd(input_vrt_path, output_tif_path, width, height, num_chunks=245):
+    with rasterio.open(input_vrt_path) as src:
+        profile = src.profile.copy()
+        profile.update({
+            'driver': 'GTiff',
+            'dtype': 'float32',
+            'nodata': 0.0,
+            'compress': 'lerc_zstd',
+            'max_z_error': 0.005,
+            'tiled': True,
+            'blockxsize': 512,
+            'blockysize': 512,
+            'bigtiff': 'YES'
+        })
+
+        chunk_size = 4096
+        with rasterio.open(output_tif_path, 'w', **profile) as dst:
+            for c in range(num_chunks):
+                r_start = c * chunk_size
+                curr_h = min(chunk_size, height - r_start)
+                win = Window(0, r_start, width, curr_h)
+
+                chunk_data = src.read(1, window=win)
+                dst.write(chunk_data, 1, window=win)
+                print(f&quot;Chunk {c+1}/{num_chunks} tersimpan!&quot;)
+</code></pre>
+<h3>Hasil File Seamless 0.5m se-Sumatera Barat:</h3>
+<ul>
+<li><code>sumbar_2025_jlh_pga_seamless.tif</code> (403 MB)</li>
+<li><code>sumbar_2025_jlh_phk_seamless.tif</code> (362 MB)</li>
+<li><code>sumbar_2025_jlh_ppk_seamless.tif</code> (307 MB)</li>
+<li><code>sumbar_2025_jlh_pya_seamless.tif</code> (360 MB)</li>
+<li><code>sumbar_2025_jlh_pgn_seamless.tif</code> (342 MB)</li>
+<li><code>sumbar_2025_jlh_pku_seamless.tif</code> (427 MB)</li>
+<li><code>sumbar_2025_kba_seamless.tif</code> (178 MB) &amp; <code>sumbar_2025_kva_seamless.tif</code> (169 MB)</li>
+</ul>
+<hr />
+<h2>7. Penyesuaian Kriteria Khusus (KK.gpkg) pada Layer PHK</h2>
+<p>Pada indikator Habitat &amp; Keanekaragaman Hayati (PHK), dilakukan penyesuaian khusus menggunakan layer vektor poligon <strong>Kriteria Khusus (<code>KK.gpkg</code>)</strong>:</p>
+<ul>
+<li>Jika <code>KK_PHK25 == 'Kriteria Khusus 1'</code> $\to$ Nilai dipaksa menjadi <strong><code>5.0</code></strong> (Zona Inti Konservasi Mutlak).</li>
+<li>Jika <code>KK_PHK25 IN ('Kriteria Khusus 2', 'Kriteria Khusus 3')</code> $\to$ Nilai dipaksa menjadi <strong><code>4.0</code></strong> (Zona Penyangga Ekologis).</li>
+<li>Area di luar poligon KK tetap mempertahankan nilai asli PHK.</li>
+<li>File hasil penyesuaian: <code>sumbar_2025_jlh_phk_kk_seamless.tif</code> (375 MB).</li>
+</ul>
+<hr />
+<h2>8. Hilirisasi Analisis: JLH Ruang Hidup (Kesesuaian Relokasi Huntap/Huntara)</h2>
+<p>Layer JLH yang telah dimodelkan kemudian dihilirkan ke dalam analisis penentuan ruang hidup dan rekomendasi relokasi masyarakat pasca-bencana dengan mengintegrasikan:</p>
+<ol>
+<li><strong>Bahaya Bencana Hidrometeorologi</strong>: Banjir, Banjir Bandang (Galodo), dan Tanah Longsor.</li>
+<li><strong>Formula Pembobotan Realistis</strong>:<ul>
+<li><strong>50% Keselamatan Jiwa</strong>: Longsor (20%), Banjir (15%), Galodo (15%).</li>
+<li><strong>50% Mutu Hidup &amp; Daya Dukung</strong>: Penyedia Air (17.5%), Penyedia Pangan (17.5%), Pengatur Air (10%), Pengatur Udara (5%).</li>
+<li><strong>Constraint Mutlak</strong>: Bahaya Tinggi ($&gt;0.66$) langsung dieliminasi.</li>
+</ul>
+</li>
+<li><strong>Screening Hukum</strong>: Tumpang susun dengan <strong>Kawasan Hutan 2026</strong> (APL vs HPK vs HPT vs HL) dan <strong>Pola Ruang RTRW Provinsi</strong> untuk menghasilkan matriks rekomendasi kebijakan perizinan operasional.</li>
+</ol>
+<hr />
+<p><em>Dokumen ini disusun sebagai panduan teknis geospasial resmi proses komputasi end-to-end Jasa Lingkungan Hidup Provinsi Sumatera Barat.</em></p>
+
+</body>
+</html>

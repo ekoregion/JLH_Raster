@@ -1,0 +1,25 @@
+# Abaikan data raster & vektor berukuran besar agar repo GitHub tetap ringan
+*.tif
+*.tiff
+*.ovr
+*.aux.xml
+*.vrt
+*.gpkg
+*.gdb/
+*.shp
+*.shx
+*.dbf
+*.prj
+
+# Abaikan virtual environment & cache Python
+.venv*
+venv/
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+
+# Abaikan file sistem macOS & temporary Office
+.DS_Store
+~$*
+*.tmp
+*.log

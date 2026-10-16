@@ -1,0 +1,12 @@
+Value,Kelas_PL,Deskripsi_ID,Skor_PGA,Skor_PHK,Skor_PPK,Skor_PYA,Skor_PGN,Skor_PKU
+1,Water,Badan Air / Danau / Sungai,5,1,1,5,4,5
+2,Natural Forest,Hutan Hujan Alami,5,5,5,3,4,5
+4,Flooded Vegetation,Vegetasi Rawa / Mangrove,4,3,3,3,4,5
+5,Crops,Pertanian Tanaman Pangan / Sawah,3,1,1,3,4,3
+7,Development Space,Lahan Terbuka Binaan,2,1,1,2,1,2
+8,Bare Ground,Tanah Terbuka / Singkapan / Tambang,1,1,1,1,1,1
+11,Rangeland,Padang Rumput / Semak Belukar,3,2,2,1,2,3
+12,Plantation,Perkebunan Tahunan / Monokultur,3,2,2,2,3,4
+13,Uncertain Trees,Pepohonan Campuran / Agroforestri,3,3,2,2,3,3
+14,Road,Jaringan Jalan & Infrastruktur,1,1,1,1,1,1
+15,Building,Bangunan / Permukiman,1,1,1,2,1,1

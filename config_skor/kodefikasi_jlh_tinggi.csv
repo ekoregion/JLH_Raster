@@ -1,0 +1,10 @@
+Kode_Raster_UInt8,Bitmask_3Bit,Kode_Kelas,Kategori_Utama,JLH_Penyusun,Label_Lengkap,Warna_Hex
+10,7 (111),A,Kategori A (3 JLH Tinggi),PGA + PHK + PPK,"A - JLH Tinggi: Pengatur Air, Kehati & Karbon",#9A7029
+21,6 (110),B1,Kategori B (2 JLH Tinggi),PGA + PHK,B1 - JLH Tinggi: Pengatur Air & Kehati,#63C5DA
+22,3 (011),B2,Kategori B (2 JLH Tinggi),PHK + PPK,B2 - JLH Tinggi: Kehati & Karbon,#F2EA3B
+23,5 (101),B3,Kategori B (2 JLH Tinggi),PGA + PPK,B3 - JLH Tinggi: Pengatur Air & Karbon,#AE529A
+31,4 (100),C1,Kategori C (1 JLH Tinggi),PGA,C1 - JLH Tinggi: Pengatur Air,#305496
+32,2 (010),C2,Kategori C (1 JLH Tinggi),PHK,C2 - JLH Tinggi: Pendukung Habitat & Kehati,#54B948
+33,1 (001),C3,Kategori C (1 JLH Tinggi),PPK,C3 - JLH Tinggi: Penyerap & Penyimpan Karbon,#ED1C24
+1,0 (000),Non-JLHT,Di Luar JLH Tinggi (< 4.2),Tidak Ada (< 4.2),Non-JLH Tinggi (Ketiga JLH < 4.2),#E2E8F0
+0,-,NoData,NoData,-,Laut / Di Luar Area Sumatera Barat,Transparan
