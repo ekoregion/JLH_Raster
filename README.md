@@ -29,29 +29,22 @@ Repositori ini memuat skrip pemrosesan geospasial (Python & GDAL), tabel acuan s
 │   ├── 01_preprocessing/                      # Tahap 1: Rasterisasi dan penyiapan input
 │   │   ├── generate_kba_kva_grids.py          # Rasterisasi GDB KBA & KVA ke grid 0.5m
 │   │   ├── create_seamless_kba_kva.py         # Penggabungan grid KBA & KVA menjadi COG seamless
-│   │   ├── rasterize_kalbar_seamless.py       # Utilitas rasterisasi wilayah Kalimantan Barat
-│   │   └── fetch_osm_sumbar.py                # Ekstraksi jaringan jalan dan bangunan OSM Sumbar
+│   │   └── rasterize_kalbar_seamless.py       # Utilitas rasterisasi wilayah Kalimantan Barat
 │   │
 │   ├── 02_core_calculation/                   # Tahap 2: Kalkulasi indikator JLH dan JLH Tinggi
 │   │   ├── calculate_jlh_sumbar_2025.py       # Perhitungan paralel 6 indikator JLH (0.5m)
 │   │   ├── apply_kk_phk.py                    # Penyesuaian Kriteria Khusus (Kawasan Konservasi) pada PHK
-│   │   ├── calculate_jlh_tinggi_sumbar.py     # Pemetaan kelas JLH Tinggi (>= 4.20) berbasis bitwise
-│   │   └── run_local_10m.py                   # Analisis kesesuaian lahan relokasi (resolusi 10m)
+│   │   └── calculate_jlh_tinggi_sumbar.py     # Pemetaan kelas JLH Tinggi (>= 4.20) berbasis bitwise
 │   │
 │   └── 03_mosaic_packaging/                   # Tahap 3: Pengemasan mozaik dan kompresi COG
 │       ├── create_seamless_jlh_lerc.py        # Konversi VRT ke GeoTIFF seamless (LERC_ZSTD)
 │       ├── create_seamless_jlh_batch.py       # Pemrosesan batch seluruh layer JLH menjadi COG
 │       └── sync_seamless_jlh.sh               # Pembuatan piramida overview (.ovr)
 │
-├── notebooks/                                 # Jupyter Notebooks
-│   ├── Kalkulasi_JLH_Sumbar.ipynb
-│   └── Kajian_Kesesuaian_Relokasi_JLH_Sumbar.ipynb
-│
-├── docs/                                      # Dokumentasi metodologi dan materi paparan
+├── docs/                                      # Dokumentasi metodologi
 │   ├── Dokumentasi_Metodologi_dan_Skrip_JLH_Sumbar.md
-│   ├── Dokumentasi_Metodologi_dan_Skrip_JLH_Sumbar.docx
-│   ├── Panduan_JLH_Sumbar.md
-│   └── presentations/
+│   ├── Dokumentasi_Metodologi_dan_Skrip_JLH_Sumbar.html
+│   └── Presentasi_Perhitungan_JLH.md
 │
 └── data_samples_metadata/                     # Statistik luasan hasil pemodelan
     └── luasan_jlh_tinggi.json
