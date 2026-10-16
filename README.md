@@ -147,6 +147,6 @@ Folder `git_upload` ini sudah diinisialisasi dengan Git dan dilengkapi `.gitigno
 ```bash
 cd git_upload
 git branch -M main
-git remote add origin https://github.com/<USERNAME_ANDA>/<NAMA_REPO_ANDA>.git
+git remote add origin https://github.com/ekoregion/JLH_Raster.git
 git push -u origin main
 ```
