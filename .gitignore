@@ -1,4 +1,4 @@
-# Abaikan data raster & vektor berukuran besar agar repo GitHub tetap ringan
+# Abaikan data raster & vektor berukuran besar di luar folder sample_data/
 *.tif
 *.tiff
 *.ovr
@@ -10,6 +10,11 @@
 *.shx
 *.dbf
 *.prj
+
+# Kecualikan seluruh isi folder sample_data/ agar tetap ter-upload ke GitHub
+!sample_data/
+!sample_data/**
+!sample_data/**/*.tif
 
 # Abaikan virtual environment & cache Python
 .venv*

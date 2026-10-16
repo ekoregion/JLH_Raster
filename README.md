@@ -46,8 +46,25 @@ Repositori ini memuat skrip pemrosesan geospasial (Python & GDAL), tabel acuan s
 │   ├── Dokumentasi_Metodologi_dan_Skrip_JLH_Sumbar.html
 │   └── Presentasi_Perhitungan_JLH.md
 │
-└── data_samples_metadata/                     # Statistik luasan hasil pemodelan
-    └── luasan_jlh_tinggi.json
+└── sample_data/                               # Potongan data sampel input & hasil JLH (0.5m)
+    ├── README.md                              # Penjelasan spesifikasi file sampel
+    ├── aoi_sample.geojson                     # Poligon batas area sampel (AOI)
+    ├── luasan_jlh_tinggi_sumbar.json          # Statistik luasan JLH Tinggi se-Sumatera Barat
+    ├── 01_input_komponen/                     # Sampel raster & vektor input (KBA, KVA, PL, KK)
+    │   ├── sample_kba_05m.tif
+    │   ├── sample_kva_05m.tif
+    │   ├── sample_penutupan_lahan_2025_05m.tif
+    │   ├── sample_vektor_kba_kva.geojson
+    │   └── sample_vektor_kawasan_konservasi.geojson
+    └── 02_output_jlh/                         # Sampel raster hasil 6 JLH, PHK_KK & JLH Tinggi (+ .qml)
+        ├── sample_jlh_pga_05m.tif
+        ├── sample_jlh_phk_05m.tif
+        ├── sample_jlh_phk_kk_05m.tif
+        ├── sample_jlh_ppk_05m.tif
+        ├── sample_jlh_pya_05m.tif
+        ├── sample_jlh_pgn_05m.tif
+        ├── sample_jlh_pku_05m.tif
+        └── sample_jlh_tinggi_05m.tif
 ```
 
 ---
