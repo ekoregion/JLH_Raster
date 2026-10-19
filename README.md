@@ -41,10 +41,10 @@ Repositori ini memuat skrip pemrosesan geospasial (Python & GDAL), tabel acuan s
 │       ├── create_seamless_jlh_batch.py       # Pemrosesan batch seluruh layer JLH menjadi COG
 │       └── sync_seamless_jlh.sh               # Pembuatan piramida overview (.ovr)
 │
-├── docs/                                      # Dokumentasi metodologi
-│   ├── Dokumentasi_Metodologi_dan_Skrip_JLH_Sumbar.md
-│   ├── Dokumentasi_Metodologi_dan_Skrip_JLH_Sumbar.html
-│   └── Presentasi_Perhitungan_JLH.md
+├── docs/                                      # Laporan teknis & metodologi
+│   ├── report_jlh_sumatera_barat_2026.docx    # Laporan teknis kajian JLH format Word (template DL4LULC)
+│   ├── report_jlh_sumatera_barat_2026.md      # Laporan teknis kajian JLH format Markdown
+│   └── Dokumentasi_Metodologi_dan_Skrip_JLH_Sumbar.html
 │
 └── sample_data/                               # Potongan data sampel input & hasil JLH (0.5m)
     ├── README.md                              # Penjelasan spesifikasi file sampel
