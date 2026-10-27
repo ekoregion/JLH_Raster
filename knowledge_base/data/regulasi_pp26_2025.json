@@ -1,0 +1,37 @@
+[
+  {
+    "nomor_pasal": "Pasal 1 Angka 6 & 7",
+    "judul": "Definisi Daya Dukung dan Daya Tampung Lingkungan Hidup (D3TLH)",
+    "bab": "BAB I KETENTUAN UMUM",
+    "isi": "Daya Dukung Lingkungan Hidup adalah kemampuan lingkungan hidup untuk mendukung perikehidupan manusia, makhluk hidup lain, dan keseimbangan antarkeduanya. Daya Tampung Lingkungan Hidup adalah kemampuan lingkungan hidup untuk menyerap zat, energi, dan/atau komponen lain yang masuk atau dimasukkan ke dalamnya.",
+    "relevansi_amdal": "Dasar hukum definisi kapasitas lingkungan hidup nasional."
+  },
+  {
+    "nomor_pasal": "Pasal 21",
+    "judul": "Metode Penyusunan D3TLH Berbasis Jasa Lingkungan Hidup",
+    "bab": "BAB IV DAYA DUKUNG LINGKUNGAN HIDUP DAN DAYA TAMPUNG LINGKUNGAN HIDUP",
+    "isi": "Penyusunan Daya Dukung Lingkungan Hidup dan Daya Tampung Lingkungan Hidup dilakukan dengan menggunakan metode: a. kinerja Jasa Lingkungan Hidup; b. jejak ekologis dan biokapasitas; atau c. metode lainnya yang diakui secara nasional dan/atau internasional.",
+    "relevansi_amdal": "Legitimasi hukum utama penggunaan peta dan skor kinerja Jasa Lingkungan Hidup (JLH) sebagai instrumen resmi evaluasi daya dukung tapak proyek."
+  },
+  {
+    "nomor_pasal": "Pasal 22",
+    "judul": "Status Daya Dukung Lingkungan Hidup (Terlampaui vs Belum Terlampaui)",
+    "bab": "BAB IV DAYA DUKUNG LINGKUNGAN HIDUP DAN DAYA TAMPUNG LINGKUNGAN HIDUP",
+    "isi": "(1) Daya Dukung Lingkungan Hidup dan Daya Tampung Lingkungan Hidup yang telah disusun, dituangkan dalam dokumen yang memuat informasi status Lingkungan Hidup berupa: a. terlampaui; atau b. belum terlampaui. (2) Ditetapkan dalam bentuk Keputusan Menteri (nasional/pulau), Keputusan Gubernur (provinsi/lintas kab/kota), dan Keputusan Bupati/Wali Kota (kabupaten/kota).",
+    "relevansi_amdal": "Status formal penapisan proyek: Proyek di zona \"Terlampaui\" dilarang menambah beban polusi/ekstraksi air dan wajib menerapkan mitigasi restoratif."
+  },
+  {
+    "nomor_pasal": "Pasal 33 ayat (1) & (2)",
+    "judul": "Kebijakan Perlindungan Penyangga Kehidupan dan Kinerja JLH Tinggi",
+    "bab": "BAB V PENYUSUNAN RENCANA PERLINDUNGAN DAN PENGELOLAAN LINGKUNGAN HIDUP",
+    "isi": "Kebijakan Perlindungan dan Pengelolaan Lingkungan Hidup memuat: a. penetapan wilayah yang memiliki fungsi penyangga kehidupan dan kinerja Jasa Lingkungan Hidup tinggi; b. pemulihan wilayah yang mengalami penurunan kualitas dan Fungsi Lingkungan Hidup; c. pemanfaatan wilayah dan Sumber Daya Alam berdasarkan kondisi Daya Dukung Lingkungan Hidup dan Daya Tampung Lingkungan Hidup.",
+    "relevansi_amdal": "Mandat mutlak untuk melindungi area berkategori JLH Tinggi (Kategori A, B, C) sebagai fungsi penyangga kehidupan yang tidak boleh dialihfungsikan tanpa kompensasi ekologis ketat."
+  },
+  {
+    "nomor_pasal": "Pasal 40",
+    "judul": "D3TLH sebagai Dasar Mutlak Pemanfaatan Sumber Daya Alam dan Perizinan Ruang",
+    "bab": "BAB V Bagian Kelima Dasar Pemanfaatan Sumber Daya Alam",
+    "isi": "(1) RPPLH digunakan sebagai dasar pemanfaatan Sumber Daya Alam. (2) Dalam hal RPPLH belum tersusun, pemanfaatan Sumber Daya Alam dilaksanakan berdasarkan Daya Dukung Lingkungan Hidup dan Daya Tampung Lingkungan Hidup dengan memperhatikan: a. keberlanjutan proses dan Fungsi lingkungan hidup; b. keberlanjutan produktivitas lingkungan hidup; dan c. keselamatan, mutu hidup, dan kesejahteraan masyarakat.",
+    "relevansi_amdal": "Kewajiban hukum bagi setiap perizinan berusaha (AMDAL/UKL-UPL/KKPR) untuk membuktikan keselarasan dengan peta D3TLH dan JLH wilayah."
+  }
+]

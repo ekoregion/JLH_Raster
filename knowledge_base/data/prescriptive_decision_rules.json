@@ -1,0 +1,65 @@
+[
+  {
+    "rule_id": "RULE-D3TLH-01",
+    "kategori": "Status Daya Dukung Lingkungan (D3TLH)",
+    "kondisi_spasial": "Penurunan luas JLH Kategori A atau B > 15% dari luas tapak, ATAU overlap dengan zona lindung/resapan air hulu.",
+    "status_d3tlh": "TERLAMPAUI",
+    "dasar_hukum": "PP No. 26 Tahun 2025 Pasal 21 & 22; Dokumen IG JLH Tinggi Bab 5.2.2.a",
+    "implikasi_amdal": "AMDAL Kategori Wajib / Berisiko Tinggi. Dilarang menambah beban ekstraksi lingkungan secara neto.",
+    "preskripsi_utama": "Wajib penataan ulang zonasi tapak (site redesign), kompensasi ekologis reforestasi di DAS yang sama rasio 1:1.5, dan audit neraca air zero-loss."
+  },
+  {
+    "rule_id": "RULE-AIR-01",
+    "kondisi_spasial": "KBA Infiltrasi Air Hujan Tinggi ATAU Indeks Pengatur Air (PGA) turun > 0.15 poin.",
+    "kategori": "Tata Air & Pengendalian Banjir",
+    "status_d3tlh": "RAWAN / BERSYARAT KETAT",
+    "dasar_hukum": "PP No. 26 Tahun 2025 Pasal 33 ayat (1) huruf a; Dokumen IG JLH Bab 2.2 & Bab 5.2.6",
+    "implikasi_amdal": "Penyusunan Rencana Pengelolaan Lingkungan (RKL) khusus neraca air mikro.",
+    "preskripsi_utama": "1. Koefisien Dasar Hijau (KDH) minimal 40%.\n2. Wajib membangun kolam retensi/detensi limpasan (retarding basin) volume minimal 1 m3 per 25 m2 atap/perkerasan.\n3. Pemasangan sumur resapan dalam pada zona geologi permeabel.\n4. Penerapan teknologi paving berpori (permeable pavement) pada seluruh area parkir/jalan sirkulasi."
+  },
+  {
+    "rule_id": "RULE-SEMPADAN-01",
+    "kondisi_spasial": "Tapak proyek berjarak < 100 m dari badan sungai utama / danau, ATAU < 50 m dari anak sungai.",
+    "kategori": "Zona Penyangga Riparian (Sempadan Sungai)",
+    "status_d3tlh": "BERSYARAT KETAT",
+    "dasar_hukum": "PP No. 26 Tahun 2025 Pasal 33; PP No. 38 Tahun 2011 tentang Sungai",
+    "implikasi_amdal": "Delineasi wajib zona sempadan hijau non-terbangun (setback buffer).",
+    "preskripsi_utama": "1. Dilarang mendirikan bangunan permanen dalam zona 50m (sungai kecil) dan 100m (sungai besar/danau).\n2. Wajib penanaman sabuk vegetasi ripari multi-strata (bambu, pohon lokal perakaran dalam) untuk stabilitas tebing.\n3. Pembangunan inlet limpasan dengan sediment trap sebelum dialirkan ke sungai."
+  },
+  {
+    "rule_id": "RULE-GAMBUT-01",
+    "kondisi_spasial": "Tapak proyek berada pada Ekoregion Gambut (WE 12 Sumatera / WE 46 Kalimantan) ATAU tutupan lahan Rawa Gambut.",
+    "kategori": "Perlindungan Ekosistem Gambut & Karbon Masif",
+    "status_d3tlh": "TERLAMPAUI (jika kubah >3m) / BERSYARAT KETAT",
+    "dasar_hukum": "PP No. 26 Tahun 2025 Pasal 33; PP No. 71 Tahun 2014 jo. PP No. 57 Tahun 2016",
+    "implikasi_amdal": "AMDAL Khusus Perlindungan Ekosistem Gambut.",
+    "preskripsi_utama": "1. Moratorium mutlak pada kubah gambut dengan ketebalan > 3 meter (zona lindung fungsi kubah).\n2. Wajib pembangunan sekat kanal (canal blocking) untuk mempertahankan muka air tanah minimal -0.4 m.\n3. Larangan total penggunaan api (zero burning) dan pembatasan beban struktur tanpa tiang pancang pada tanah gambut."
+  },
+  {
+    "rule_id": "RULE-EROSI-01",
+    "kondisi_spasial": "KBA Lereng Pegunungan/Vulkanik (lereng > 25%) ATAU Indeks Pencegahan Erosi turun > 0.20 poin.",
+    "kategori": "Pengendalian Erosi & Bencana Longsor",
+    "status_d3tlh": "RAWAN / BERSYARAT KETAT",
+    "dasar_hukum": "PP No. 26 Tahun 2025 Pasal 33; Dokumen IG JLH Bab 5.2.6.a",
+    "implikasi_amdal": "Kajian Geoteknik dan Rencana Pencegahan Gerakan Tanah.",
+    "preskripsi_utama": "1. Dilarang melakukan pembukaan lahan skala penuh (clearing total) pada lereng curam.\n2. Wajib aplikasi bioengineering: teras bangku dengan vetiver grass, retaining wall, dan drainase lereng bersalur kedap air.\n3. Pembuatan bak pengendap sedimen (sediment trap) di kaki lereng dengan jadwal pengerukan berkala."
+  },
+  {
+    "rule_id": "RULE-KEHATI-01",
+    "kondisi_spasial": "JLH Kategori A (Tinggi pada Air, Karbon, dan Kehati) ATAU memotong koridor jelajah satwa liar antar blok hutan.",
+    "kategori": "Koridor Satwa & Keanekaragaman Hayati",
+    "status_d3tlh": "TERLAMPAUI / BERSYARAT EKSTREM",
+    "dasar_hukum": "PP No. 26 Tahun 2025 Pasal 33 ayat (1) huruf a; Dokumen IG JLH Bab 5.2.6.c & 5.3.6.c",
+    "implikasi_amdal": "Kajian Khusus Koridor Biodiversitas dan Izin Pemanfaatan Terbatas.",
+    "preskripsi_utama": "1. Wajib menyisakan koridor konektivitas hijau selebar minimal 250 - 500 meter.\n2. Larangan pemagaran masif yang memutus lintasan mamalia besar (harimau, tapir, orangutan).\n3. Pemasangan peredam kebisingan dan lampu arah bawah (anti-light pollution) pada area operasi di batas hutan primer."
+  },
+  {
+    "rule_id": "RULE-KARBON-01",
+    "kondisi_spasial": "Kehilangan tutupan hutan alam > 10 ha ATAU pelepasan cadangan karbon > 500 ton CO2-eq.",
+    "kategori": "Mitigasi Perubahan Iklim & Stok Karbon",
+    "status_d3tlh": "BERSYARAT KETAT",
+    "dasar_hukum": "PP No. 46 Tahun 2017 (Instrumen Ekonomi LH); Dokumen IG JLH Bab 2.4",
+    "implikasi_amdal": "Penyusunan Rencana Net-Zero Emisi Proyek.",
+    "preskripsi_utama": "1. Kewajiban reboisasi/penanaman kembali dengan rasio luas 1:1.25 menggunakan spesies pohon lokal bernilai serapan karbon tinggi (Dipterocarpaceae, Shorea spp, Hopea spp).\n2. Pemeliharaan dan monitoring ketahanan hidup pohon minimal selama 5 tahun berturut-turut."
+  }
+]

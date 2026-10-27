@@ -1,0 +1,65 @@
+[
+  {
+    "pulau": "Sumatera",
+    "wilayah_ekoregion": "WE 3. Pegunungan Gayo Leuser & WE 10. Bukit Barisan Luhak Tujuh Talago",
+    "tipe_bentangalam": "Pegunungan & Hulu DAS",
+    "peran_ekologis": "Pusat JLH Kategori A terbesar di Sumatera; benteng terakhir penyimpan cadangan karbon masif, penyangga hidrologi lintas-DAS, pengendali aliran dasar sungai, dan habitat spesies kunci (Harimau, Gajah, Tapir).",
+    "ancaman_spasial": "Fragmentasi habitat akibat jalan/infrastruktur linear, perambahan lereng curam, dan alih fungsi hutan primer.",
+    "arahan_operasional": "1. Wajib penetapan zona perlindungan hulu mutlak pada elevasi tinggi dan lereng curam (>25%).\n2. Larangan konversi hutan pada kategori A dan B.\n3. Pembentukan koridor ekologis antar petak hutan terfragmentasi untuk memelihara aliran genetik satwa liar.\n4. Pembatasan aktivitas ekstraktif dan konstruksi di zona tangkapan air.",
+    "mitigasi_wajib": "KDH minimal 60%, konstruksi berteras, check dam sedimen, larangan pemagaran permanen pemutus koridor satwa."
+  },
+  {
+    "pulau": "Sumatera",
+    "wilayah_ekoregion": "WE 12. Lahan Basah Pesisir Timur Andalas",
+    "tipe_bentangalam": "Lahan Gambut & Mangrove Pesisir",
+    "peran_ekologis": "Penyimpanan karbon skala masif, regulasi tata air regional pesisir, peredam badai/gelombang laut dan pencegah intrusi air asin.",
+    "ancaman_spasial": "Subsiden lahan gambut, kebakaran hutan dan lahan (karhutla), degradasi hidrologi akibat kanalisasi/drainase perkebunan, dan intrusi air laut.",
+    "arahan_operasional": "1. Restorasi hidrologi gambut melalui canal blocking dan pembasahan permanen.\n2. Moratorium pembukaan lahan gambut primer dan kubah gambut (>3m).\n3. Rehabilitasi sabuk hijau mangrove di pesisir pantai rawan abrasi.\n4. Pengendalian sistem drainase mikro untuk menjaga tinggi muka air tanah.",
+    "mitigasi_wajib": "Tinggi muka air tanah gambut minimal -0.4 meter, zero burning, setback hidrologis sempadan rawa 100m."
+  },
+  {
+    "pulau": "Sumatera",
+    "wilayah_ekoregion": "WE 9. Dataran Natal–Padang & Wilayah Dataran Rendah Fluvial",
+    "tipe_bentangalam": "Dataran Aluvium & Dataran Berombak",
+    "peran_ekologis": "Penyedia pangan, pemukiman, dan kawasan resapan air lokal dengan dominasi tekanan antropogenik tinggi.",
+    "ancaman_spasial": "Konversi lahan masif ke perumahan/industri, penurunan infiltrasi tanah memicu banjir limpasan permukaan dan kekeringan air tanah.",
+    "arahan_operasional": "1. Penerapan Koefisien Dasar Bangunan (KDB) ketat dan pelestarian sawah/lahan basah produktif.\n2. Pengendalian konversi pada sempadan sungai minimal 50-100 meter.\n3. Integrasi kolam retensi alami pada setiap pengembangan tapak baru.",
+    "mitigasi_wajib": "KDH minimal 30-40%, sumur resapan rasio 1:50m2 bidang kedap air, kolam detensi banjir."
+  },
+  {
+    "pulau": "Sumatera",
+    "wilayah_ekoregion": "WE 17, 19, 20, 21. Kepulauan (Mentawai, Nias, Natuna)",
+    "tipe_bentangalam": "Pulau-Pulau Kecil",
+    "peran_ekologis": "Sistem hidrologi pulau kecil terbatas, keanekaragaman hayati endemik, dan pertahanan pesisir.",
+    "ancaman_spasial": "Kerentanan tinggi terhadap kenaikan muka air laut, abrasi pantai, intrusi air laut ke akuifer air tawar tipis.",
+    "arahan_operasional": "1. Larangan ketat ekstraksi air tanah berlebih.\n2. Perlindungan 100% vegetasi pantai dan terumbu karang.\n3. Desain infrastruktur tahan bencana badai laut dan tsunami.",
+    "mitigasi_wajib": "Pemanenan air hujan (rainwater harvesting), setback sempadan pantai 100m, larangan perusakan mangrove."
+  },
+  {
+    "pulau": "Kalimantan",
+    "wilayah_ekoregion": "WE 51. Puak Rimba Betung Kerihun Kayan Mentarang & WE 47. Puak Meratus",
+    "tipe_bentangalam": "Jantung Pegunungan & Hutan Primer Kalimantan (Heart of Borneo)",
+    "peran_ekologis": "Pusat JLH Kategori A terbesar di Kalimantan; menara air (water tower) untuk sungai Kapuas, Mahakam, dan Barito; penyimpan karbon biomasa terbesar.",
+    "ancaman_spasial": "Pertambangan mineral/batubara, penebangan liar, dan jalan pembuka hutan yang memicu fragmentasi.",
+    "arahan_operasional": "1. Menetapkan zona perlindungan hulu prioritas sebagai pusat JLH Tinggi mutlak.\n2. Reforestasi berbasis vegetasi endemik (Dipterocarpaceae) pada lereng curam.\n3. Mengendalikan pembangunan di lereng sensitif dan elevasi rawan erosi.\n4. Integrasi JLH kategori A ke dalam RTRW provinsi/kabupaten.",
+    "mitigasi_wajib": "Larangan aktivitas tambang terbuka di daerah hulu, koridor konektivitas satwa minimal 500m, sistem sensor pemantauan debit air."
+  },
+  {
+    "pulau": "Kalimantan",
+    "wilayah_ekoregion": "WE 46. Puak Lahan Basah Khatulistiwa Sebangau - Gunung Palung & WE 49. Mahakam Hilir",
+    "tipe_bentangalam": "Kubah Gambut & Rawa Tropis Dataran Banjir",
+    "peran_ekologis": "Pengendali banjir raksasa musiman Kalimantan, habitat Orangutan dan Bekantan, penyimpan karbon gambut sangat dalam.",
+    "ancaman_spasial": "Drainase perkebunan sawit, kebakaran gambut berulang, subsiden, dan hilangnya keanekaragaman rawa.",
+    "arahan_operasional": "1. Restorasi gambut melalui canal blocking dan pembasahan permanen.\n2. Sistem drainase adaptif yang menggabungkan ruang retensi air alami.\n3. Penataan ulang delta dan dataran banjir dengan konsep setback hidrologis.\n4. Perlindungan zona semipermeabel alami.",
+    "mitigasi_wajib": "Canal block per 500m saluran, larangan pembukaan lahan gambut tebal, sempadan danau tapal kuda (oxbow lake) 100m."
+  },
+  {
+    "pulau": "Kalimantan",
+    "wilayah_ekoregion": "WE 50. Puak Kapuas Singkawang & Dataran Rendah Pesisir",
+    "tipe_bentangalam": "Dataran Rendah Fluvial & Pesisir Urban",
+    "peran_ekologis": "Pusat permukiman dan kegiatan ekonomi regional Kalimantan Barat, muara DAS Kapuas.",
+    "ancaman_spasial": "Banjir pasang rob bercampur luapan sungai, intrusi air laut, penurunan kualitas air akibat sedimentasi tambang emas tanpa izin (PETI).",
+    "arahan_operasional": "1. Mengurangi ekstraksi air tanah melalui penyediaan air baku permukaan terpadu.\n2. Rehabilitasi sabuk mangrove muara Kapuas dan penataan ruang pesisir bebas abrasi.\n3. Penegakan sempadan sungai Kapuas dan anak-anak sungainya.",
+    "mitigasi_wajib": "Polder system dan tanggul hijau ramah lingkungan, KDH 40%, IPAL komunal terpadu."
+  }
+]
